@@ -16,3 +16,5 @@ pub const TREASURY_WALLET7: &str = "Fs8R7R6dP3B7mAJ6QmWZbomBRuTbiJyiR4QYjoxhLdPu
 pub const TREASURY_WALLET8: &str = "Fs8R7R6dP3B7mAJ6QmWZbomBRuTbiJyiR4QYjoxhLdPu";
 pub const TREASURY_WALLET9: &str = "Fs8R7R6dP3B7mAJ6QmWZbomBRuTbiJyiR4QYjoxhLdPu";
 pub const TREASURY_WALLET10: &str = "Fs8R7R6dP3B7mAJ6QmWZbomBRuTbiJyiR4QYjoxhLdPu";
+
+//c

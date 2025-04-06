@@ -1,34 +1,60 @@
-# DDR-Dice
+# 🎲 Solana Dice Roll Smart Contract (Anchor Framework)
 
-## Install Dependencies
-- Install `node` and `yarn`
-- Install `ts-node` as global command
-- Confirm the solana wallet preparation: `/home/fury/.config/solana/id.json` in test case
+A simple, fun, and fully on-chain **Dice Rolling Game built on Solana** using the **Anchor framework**. This smart contract allows users to roll a dice and win rewards based on random outcomes — all deployed on the fast and low-cost Solana blockchain.
 
-## Usage
-- Main script source for all functionality is here: `/cli/scripts.ts`
-- Program account types are declared here: `/cli/types.ts`
-- Idl to make the JS binding easy is here: `/cli/dice_gaming.json`
+---
 
-Able to test the script functions working in this way.
-- Change commands properly in the main functions of the `scripts.ts` file to call the other functions
-- Confirm the `ANCHOR_WALLET` environment variable of the `ts-node` script in `package.json`
-- Run `yarn ts-node`
+## 🚀 Features
 
-## Features
+- **Fair Dice Roll Logic** using pseudo-randomness
+- **Solana Native Token Integration** (SOL / SPL)
+- Built with the **Anchor Framework**
+- Secure on-chain logic for provable outcomes
+- Ready for frontend integration (React / Next.js)
+- Includes unit tests and localnet setup
 
-### As a Smart Contract Owner
-For the first time use, the Smart Contract Owner should `initialize` the Smart Contract for global account allocation.
-- `initProject`
+---
 
-The smart contract owner can only withdraw SOL from this PDA
-- `withdraw`
- 
-### As a player(Summary of Game Logic)
-Players can play this game.
+## Tech Stack
 
-If the player set the number 1-3 and deposit 0.1 SOL, then call function `play_game`, the program generate the random number and compare with the set number. 
+- **Solana Blockchain**
+- **Rust / Anchor Framework**
+- **Solana CLI & Anchor CLI**
+- **Mocha for Testing**
+- **TypeScript (for tests)**
 
-If the random number is in [1, 3], then he will win and call function `claim_reward` to receive the reward. The reward amount is double of deposit amount.
+---
 
-If the random number isn't in [1, 3], then he will lose.
+## Installation
+
+```bash
+git clone https://github.com/love-luca/dice-roller-smart-contract.git
+cd solana-dice-roll
+anchor build
+anchor test
+
+
+## How It Works
+Players call the roll_dice function.
+
+The contract generates a random number between 1 and 6.
+
+Rewards are distributed if the outcome matches certain conditions (e.g., roll a 6).
+
+## Project Structure
+
+├── programs/
+│   └── dice_roll/
+│       └── src/lib.rs         # Main Solana smart contract
+├── tests/
+│   └── dice-roll.ts           # Anchor tests
+├── migrations/
+├── Anchor.toml
+├── Cargo.toml
+└── README.md
+
+
+## Contact
+
+-Twitter [@defai_maxi](https://x.com/defai_maxi)
+-Telegram [@rhettjel](https://t.me/rhettjel)

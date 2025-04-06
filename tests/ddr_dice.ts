@@ -4,7 +4,7 @@ import { DdrDice } from '../target/types/ddr_dice';
 
 describe('ddr_dice', () => {
 
-  // Configure the client to use the local cluster.
+  // Configure the client to use the local cluster.;
   anchor.setProvider(anchor.Provider.env());
 
   const program = anchor.workspace.DdrDice as Program<DdrDice>;

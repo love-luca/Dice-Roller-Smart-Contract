@@ -1,5 +1,5 @@
 [programs.devnet]
-ddr_dice = "FbudCGq7GiwGhUV3kEaFWfyFE1Lbxs6VNcdn5Jo14nJQ"
+ddr_dice = "FbudCGq7GiwGhUV3kEaFWfyFE1Lbxs6VNcdn5Jo14nJQ "
 
 [registry]
 url = "https://anchor.projectserum.com"

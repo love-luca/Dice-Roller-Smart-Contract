@@ -4,7 +4,7 @@ use solana_program::program::{
     invoke,
 };
 
-// transfer sol
+// transfer sol;
 pub fn sol_transfer_with_signer<'a>(
     source: AccountInfo<'a>,
     destination: AccountInfo<'a>,

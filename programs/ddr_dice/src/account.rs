@@ -7,7 +7,7 @@ use crate::error::*;
 #[derive(Default)]
 pub struct GlobalPool {
     pub super_admin: Pubkey, // 32
-    pub total_round: u64,    // 8
+    pub total_round: u64,    // 9
 }
 
 #[zero_copy]

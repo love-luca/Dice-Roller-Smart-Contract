@@ -1,5 +1,5 @@
 use anchor_lang::prelude::*;
-
+//Error
 #[error]
 pub enum GameError {
     #[msg("Invalid Player Pool Owner")]

@@ -35,7 +35,7 @@ pub mod ddr_dice {
     }
 
     /**
-    The main function to play dice.
+    The main function to play dice.;
     Input Args:
     set_number: The number is set by a player to play
     deposit:    The SOL amount to deposit 
